@@ -1,15 +1,14 @@
 //
-//  main.c
+//  main.h
 //  C-Programs
 //
 //  Created by clfbbn on 2017/10/19.
 //  Copyright © 2017年 clfbbn. All rights reserved.
 //
 
+#ifndef main_h
+#define main_h
+#define NUMBER '0'
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
-}
+#endif /* main_h */

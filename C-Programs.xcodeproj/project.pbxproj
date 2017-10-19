@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FD5831401F98AFDC004635EE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FD58313F1F98AFDC004635EE /* main.c */; };
+		FD5831481F98DA3D004635EE /* pop_push.c in Sources */ = {isa = PBXBuildFile; fileRef = FD5831471F98DA3D004635EE /* pop_push.c */; };
+		FD58314A1F98DB29004635EE /* getop.c in Sources */ = {isa = PBXBuildFile; fileRef = FD5831491F98DB29004635EE /* getop.c */; };
+		FD58314D1F98DD45004635EE /* getch_ungetch.c in Sources */ = {isa = PBXBuildFile; fileRef = FD58314C1F98DD45004635EE /* getch_ungetch.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +29,10 @@
 		FD58313C1F98AFDC004635EE /* C-Programs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C-Programs"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD58313F1F98AFDC004635EE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FD5831461F98D58D004635EE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FD5831471F98DA3D004635EE /* pop_push.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pop_push.c; sourceTree = "<group>"; };
+		FD5831491F98DB29004635EE /* getop.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getop.c; sourceTree = "<group>"; };
+		FD58314B1F98DCEC004635EE /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		FD58314C1F98DD45004635EE /* getch_ungetch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getch_ungetch.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +66,21 @@
 		FD58313E1F98AFDC004635EE /* C-Programs */ = {
 			isa = PBXGroup;
 			children = (
-				FD58313F1F98AFDC004635EE /* main.c */,
+				FD58314E1F98E080004635EE /* P-1 */,
 			);
 			path = "C-Programs";
+			sourceTree = "<group>";
+		};
+		FD58314E1F98E080004635EE /* P-1 */ = {
+			isa = PBXGroup;
+			children = (
+				FD58313F1F98AFDC004635EE /* main.c */,
+				FD5831471F98DA3D004635EE /* pop_push.c */,
+				FD5831491F98DB29004635EE /* getop.c */,
+				FD58314C1F98DD45004635EE /* getch_ungetch.c */,
+				FD58314B1F98DCEC004635EE /* main.h */,
+			);
+			path = "P-1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD58314D1F98DD45004635EE /* getch_ungetch.c in Sources */,
+				FD58314A1F98DB29004635EE /* getop.c in Sources */,
 				FD5831401F98AFDC004635EE /* main.c in Sources */,
+				FD5831481F98DA3D004635EE /* pop_push.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +258,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76FF489E5X;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = 7.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -246,6 +270,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76FF489E5X;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = 7.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
