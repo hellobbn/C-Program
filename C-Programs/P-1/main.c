@@ -5,7 +5,9 @@
 //  Created by clfbbn on 2017/10/19.
 //  Copyright © 2017年 clfbbn. All rights reserved.
 //
-
+//  Calculator
+/* To calculate (1-2) * (4 + 5) */
+/* input ' 1 2 - 4 5 + * ' */
 
 #include <stdlib.h>
 #include "main.h"

@@ -6,13 +6,6 @@
 	objectVersion = 48;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		FD5831401F98AFDC004635EE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FD58313F1F98AFDC004635EE /* main.c */; };
-		FD5831481F98DA3D004635EE /* pop_push.c in Sources */ = {isa = PBXBuildFile; fileRef = FD5831471F98DA3D004635EE /* pop_push.c */; };
-		FD58314A1F98DB29004635EE /* getop.c in Sources */ = {isa = PBXBuildFile; fileRef = FD5831491F98DB29004635EE /* getop.c */; };
-		FD58314D1F98DD45004635EE /* getch_ungetch.c in Sources */ = {isa = PBXBuildFile; fileRef = FD58314C1F98DD45004635EE /* getch_ungetch.c */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		FD58313A1F98AFDC004635EE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -140,10 +133,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD58314D1F98DD45004635EE /* getch_ungetch.c in Sources */,
-				FD58314A1F98DB29004635EE /* getop.c in Sources */,
-				FD5831401F98AFDC004635EE /* main.c in Sources */,
-				FD5831481F98DA3D004635EE /* pop_push.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
