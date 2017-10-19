@@ -234,6 +234,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76FF489E5X;
+				GCC_VERSION = 7.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -243,6 +244,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76FF489E5X;
+				GCC_VERSION = 7.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
