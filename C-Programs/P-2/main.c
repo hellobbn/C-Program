@@ -6,7 +6,7 @@
 //  Copyright © 2017年 clfbbn. All rights reserved.
 //
 //  Count C KeyWords
-//  Version: 1.1
+//  Version: 1.1.1
 //  Updated: 2017/10/21
 //
 
@@ -78,7 +78,7 @@ int main( ) {
     char word[100];
     int pos = 0;
     if (getword(word, 100) != EOF) {
-        if ((pos = binsearch(word, keytab, NKEYS)) > 0) {
+        if ((pos = binsearch(word, keytab, NKEYS)) >= 0) {
             keytab[pos].count ++;
         }
     }
