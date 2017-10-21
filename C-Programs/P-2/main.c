@@ -6,7 +6,7 @@
 //  Copyright © 2017年 clfbbn. All rights reserved.
 //
 //  Count C KeyWords
-//  Version: 1.0
+//  Version: 1.1
 //  Updated: 2017/10/21
 //
 
@@ -60,18 +60,30 @@ int getword(char* s, int max_char) {
     *(s + i) = '\0';
     return i > 0 ? i : EOF;
 }
-
+int binsearch(char* s, struct key *keytab, int str_num) {
+    int first = 0, last = str_num - 1, i = 0;
+    while (first <= last) {
+        i = (first + last) / 2;
+        if (strcmp(s, (keytab + i)->keys) > 0) {
+            first = i + 1;
+        } else if(strcmp(s, (keytab + i)->keys) < 0 ) {
+            last = i - 1;
+        } else {
+            return i;
+        }
+    }
+    return -1;
+}
 int main( ) {
     char word[100];
+    int pos = 0;
     if (getword(word, 100) != EOF) {
-        for (int i = 0; i < NKEYS; ++i) {
-            if (strcmp(keytab[i].keys, word) == 0) {
-                keytab[i].count ++;
-            }
+        if ((pos = binsearch(word, keytab, NKEYS)) > 0) {
+            keytab[pos].count ++;
         }
     }
     for (int i = 0; i < NKEYS; ++i) {
-        printf("\n%s\t%d", (keytab + i)->keys, (keytab + i) -> count);
+        printf("%-10s%d\n", (keytab + i)->keys, (keytab + i) -> count);
     }
 }
 
