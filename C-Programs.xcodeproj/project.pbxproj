@@ -6,6 +6,10 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FDFDE1991F9B319200F93054 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FDFDE1981F9B319200F93054 /* main.c */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		FD58313A1F98AFDC004635EE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -26,6 +30,7 @@
 		FD5831491F98DB29004635EE /* getop.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getop.c; sourceTree = "<group>"; };
 		FD58314B1F98DCEC004635EE /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		FD58314C1F98DD45004635EE /* getch_ungetch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getch_ungetch.c; sourceTree = "<group>"; };
+		FDFDE1981F9B319200F93054 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,7 @@
 		FD58313E1F98AFDC004635EE /* C-Programs */ = {
 			isa = PBXGroup;
 			children = (
+				FDFDE1971F9B317D00F93054 /* P-2 */,
 				FD58314E1F98E080004635EE /* P-1 */,
 			);
 			path = "C-Programs";
@@ -74,6 +80,14 @@
 				FD58314B1F98DCEC004635EE /* main.h */,
 			);
 			path = "P-1";
+			sourceTree = "<group>";
+		};
+		FDFDE1971F9B317D00F93054 /* P-2 */ = {
+			isa = PBXGroup;
+			children = (
+				FDFDE1981F9B319200F93054 /* main.c */,
+			);
+			path = "P-2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFDE1991F9B319200F93054 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
