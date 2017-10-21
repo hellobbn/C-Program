@@ -13,17 +13,18 @@ struct tree* addTree(struct tree* in, char* s) {
     int cond;
     
     if (in == NULL) {
+        in = alloc_for_tree(in);
         in->word = cuscalloc(s);
-        in->count++;
+        in->count = 1;
         in->left = NULL;
         in->right = NULL;
     } else if((cond = strcmp(in->word, s)) == 0) {
         in->count += 1;
     } else if(cond > 0) {
         //  in->word is larger, set s to left
-        addTree(in->left, s);
+        in->left = addTree(in->left, s);
     } else {
-        addTree(in->right, s);
+        in->right = addTree(in->right, s);
     }
     
     return in;
@@ -34,5 +35,7 @@ void printTree(struct tree* in) {
         printTree(in->left);
         printf("%4d   %s\n", in->count, in->word);
         printTree(in->right);
+        in = NULL;
+        
     }
 }
