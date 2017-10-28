@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDC0B3EE1FA20E0D000FD0D9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FDC0B3ED1FA20E0D000FD0D9 /* main.c */; };
+		FDD36D341FA437E2006C32B4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FDD36D331FA437E2006C32B4 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +31,7 @@
 		FD58314B1F98DCEC004635EE /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		FD58314C1F98DD45004635EE /* getch_ungetch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getch_ungetch.c; sourceTree = "<group>"; };
 		FDC0B3ED1FA20E0D000FD0D9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FDD36D331FA437E2006C32B4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FDFDE1981F9B319200F93054 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FDFDE19B1F9B5BA500F93054 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FDFDE19D1F9B5BBB00F93054 /* P-3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "P-3.h"; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		FD58313E1F98AFDC004635EE /* C-Programs */ = {
 			isa = PBXGroup;
 			children = (
+				FDD36D321FA437CF006C32B4 /* P-5 */,
 				FDC0B3EC1FA20DFB000FD0D9 /* P-4 */,
 				FDFDE19A1F9B5B8D00F93054 /* P-3 */,
 				FDFDE1971F9B317D00F93054 /* P-2 */,
@@ -96,6 +98,14 @@
 				FDC0B3ED1FA20E0D000FD0D9 /* main.c */,
 			);
 			path = "P-4";
+			sourceTree = "<group>";
+		};
+		FDD36D321FA437CF006C32B4 /* P-5 */ = {
+			isa = PBXGroup;
+			children = (
+				FDD36D331FA437E2006C32B4 /* main.c */,
+			);
+			path = "P-5";
 			sourceTree = "<group>";
 		};
 		FDFDE1971F9B317D00F93054 /* P-2 */ = {
@@ -175,7 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC0B3EE1FA20E0D000FD0D9 /* main.c in Sources */,
+				FDD36D341FA437E2006C32B4 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
