@@ -35,7 +35,6 @@ void printTree(struct tree* in) {
         printTree(in->left);
         printf("%4d   %s\n", in->count, in->word);
         printTree(in->right);
-        in = NULL;
-        
+        return;
     }
 }
