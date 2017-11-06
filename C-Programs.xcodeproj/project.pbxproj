@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDD36D341FA437E2006C32B4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FDD36D331FA437E2006C32B4 /* main.c */; };
+		FDECC8D41FAFDF9100FD77DF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8D31FAFDF9100FD77DF /* main.c */; };
+		FDECC8D61FAFE07100FD77DF /* read_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8D51FAFE07100FD77DF /* read_poly.c */; };
+		FDECC8D91FAFE3AF00FD77DF /* add_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8D81FAFE3AF00FD77DF /* add_poly.c */; };
+		FDECC8DB1FAFE5D200FD77DF /* print_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8DA1FAFE5D200FD77DF /* print_poly.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,11 @@
 		FD58314C1F98DD45004635EE /* getch_ungetch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getch_ungetch.c; sourceTree = "<group>"; };
 		FDC0B3ED1FA20E0D000FD0D9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FDD36D331FA437E2006C32B4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FDECC8D31FAFDF9100FD77DF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FDECC8D51FAFE07100FD77DF /* read_poly.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = read_poly.c; sourceTree = "<group>"; };
+		FDECC8D71FAFE08B00FD77DF /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		FDECC8D81FAFE3AF00FD77DF /* add_poly.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = add_poly.c; sourceTree = "<group>"; };
+		FDECC8DA1FAFE5D200FD77DF /* print_poly.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = print_poly.c; sourceTree = "<group>"; };
 		FDFDE1981F9B319200F93054 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FDFDE19B1F9B5BA500F93054 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FDFDE19D1F9B5BBB00F93054 /* P-3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "P-3.h"; sourceTree = "<group>"; };
@@ -71,6 +79,7 @@
 		FD58313E1F98AFDC004635EE /* C-Programs */ = {
 			isa = PBXGroup;
 			children = (
+				FDECC8D21FAFDF0800FD77DF /* P-6 */,
 				FDD36D321FA437CF006C32B4 /* P-5 */,
 				FDC0B3EC1FA20DFB000FD0D9 /* P-4 */,
 				FDFDE19A1F9B5B8D00F93054 /* P-3 */,
@@ -106,6 +115,18 @@
 				FDD36D331FA437E2006C32B4 /* main.c */,
 			);
 			path = "P-5";
+			sourceTree = "<group>";
+		};
+		FDECC8D21FAFDF0800FD77DF /* P-6 */ = {
+			isa = PBXGroup;
+			children = (
+				FDECC8D31FAFDF9100FD77DF /* main.c */,
+				FDECC8D51FAFE07100FD77DF /* read_poly.c */,
+				FDECC8D71FAFE08B00FD77DF /* main.h */,
+				FDECC8D81FAFE3AF00FD77DF /* add_poly.c */,
+				FDECC8DA1FAFE5D200FD77DF /* print_poly.c */,
+			);
+			path = "P-6";
 			sourceTree = "<group>";
 		};
 		FDFDE1971F9B317D00F93054 /* P-2 */ = {
@@ -185,7 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDD36D341FA437E2006C32B4 /* main.c in Sources */,
+				FDECC8D91FAFE3AF00FD77DF /* add_poly.c in Sources */,
+				FDECC8DB1FAFE5D200FD77DF /* print_poly.c in Sources */,
+				FDECC8D41FAFDF9100FD77DF /* main.c in Sources */,
+				FDECC8D61FAFE07100FD77DF /* read_poly.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
