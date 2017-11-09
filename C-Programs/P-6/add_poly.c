@@ -7,7 +7,8 @@
 //
 
 #include "main.h"
-#include <stdlib.h>
+#include "shared_poly.h"
+
 int compare_poly(Polynomial p1, Polynomial p2);
 Polynomial add_poly(Polynomial inP1, Polynomial inP2) {
     Polynomial front, end, temp;

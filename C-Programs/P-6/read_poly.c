@@ -7,7 +7,8 @@
 //
 
 #include "main.h"
-#include <stdlib.h>
+#include "shared_poly.h"
+
 
 Polynomial read_poly(void) {
     Polynomial front, end, temp;

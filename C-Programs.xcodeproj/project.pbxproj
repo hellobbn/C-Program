@@ -11,6 +11,7 @@
 		FDECC8D61FAFE07100FD77DF /* read_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8D51FAFE07100FD77DF /* read_poly.c */; };
 		FDECC8D91FAFE3AF00FD77DF /* add_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8D81FAFE3AF00FD77DF /* add_poly.c */; };
 		FDECC8DB1FAFE5D200FD77DF /* print_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8DA1FAFE5D200FD77DF /* print_poly.c */; };
+		FDECC8E01FAFEC7100FD77DF /* poly_multiplication.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8DF1FAFEC7100FD77DF /* poly_multiplication.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		FDECC8D71FAFE08B00FD77DF /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		FDECC8D81FAFE3AF00FD77DF /* add_poly.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = add_poly.c; sourceTree = "<group>"; };
 		FDECC8DA1FAFE5D200FD77DF /* print_poly.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = print_poly.c; sourceTree = "<group>"; };
+		FDECC8DE1FAFEB4100FD77DF /* shared_poly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shared_poly.h; sourceTree = "<group>"; };
+		FDECC8DF1FAFEC7100FD77DF /* poly_multiplication.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = poly_multiplication.c; sourceTree = "<group>"; };
 		FDFDE1981F9B319200F93054 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FDFDE19B1F9B5BA500F93054 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FDFDE19D1F9B5BBB00F93054 /* P-3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "P-3.h"; sourceTree = "<group>"; };
@@ -122,9 +125,11 @@
 			children = (
 				FDECC8D31FAFDF9100FD77DF /* main.c */,
 				FDECC8D51FAFE07100FD77DF /* read_poly.c */,
-				FDECC8D71FAFE08B00FD77DF /* main.h */,
 				FDECC8D81FAFE3AF00FD77DF /* add_poly.c */,
 				FDECC8DA1FAFE5D200FD77DF /* print_poly.c */,
+				FDECC8DF1FAFEC7100FD77DF /* poly_multiplication.c */,
+				FDECC8D71FAFE08B00FD77DF /* main.h */,
+				FDECC8DE1FAFEB4100FD77DF /* shared_poly.h */,
 			);
 			path = "P-6";
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 				FDECC8D91FAFE3AF00FD77DF /* add_poly.c in Sources */,
 				FDECC8DB1FAFE5D200FD77DF /* print_poly.c in Sources */,
 				FDECC8D41FAFDF9100FD77DF /* main.c in Sources */,
+				FDECC8E01FAFEC7100FD77DF /* poly_multiplication.c in Sources */,
 				FDECC8D61FAFE07100FD77DF /* read_poly.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,9 +330,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76FF489E5X;
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = 7.2;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -336,9 +344,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76FF489E5X;
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = 7.2;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

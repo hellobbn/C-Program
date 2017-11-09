@@ -8,6 +8,7 @@
 
 #ifndef main_h
 #define main_h
+
 #include <stdio.h>
 
 typedef struct PolyNode* Polynomial;
@@ -16,6 +17,6 @@ struct PolyNode {
     int pow;
     Polynomial Next;
 };
-void attach_poly(int coefficient, int power, Polynomial* prear);
-
+Polynomial add_poly(Polynomial inP1, Polynomial inP2);
+Polynomial poly_multiplication(Polynomial p1, Polynomial p2);
 #endif /* main_h */
