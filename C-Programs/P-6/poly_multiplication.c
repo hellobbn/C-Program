@@ -41,7 +41,7 @@ Polynomial poly_multiplication(Polynomial p1, Polynomial p2) {
             if((temp = findPoly(current, head->Next)) != NULL) {
                 //  B. If there is, add it
                 if (temp->pow == current->pow) {
-                    temp->coef += temp->coef;
+                    temp->coef += current->coef;
                 } else {
                 //  C. If there isn't and it is in the poly, add it
                     save = temp->Next;
