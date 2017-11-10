@@ -14,10 +14,13 @@ Polynomial findPoly(Polynomial p1, Polynomial target) {
         return NULL;
     }
     while(target) {
+        if (target->pow == p1->pow) {
+            return target;
+        }
         if (target->Next == NULL) {
             return NULL;
         }
-        if (target->Next->pow < p1->pow) {
+        if ((target->Next->pow < p1->pow)) {
             return target;
         }
         target = target->Next;
@@ -26,6 +29,19 @@ Polynomial findPoly(Polynomial p1, Polynomial target) {
 }
 
 Polynomial poly_multiplication(Polynomial p1, Polynomial p2) {
+    p1 = p1->Next;
+    p2 = p2->Next;
+    if (p1 == NULL && p2 == NULL) {
+        return NULL;
+    }
+    if (p1 == NULL || p2 == NULL) {
+        Polynomial ret = malloc(sizeof(struct PolyNode));
+        ret->coef = 0;
+        ret->pow = 0;
+        ret->Next = NULL;
+        return ret;
+    }
+
     Polynomial head, rear;
     Polynomial current, p2_temp;
     Polynomial temp, save;

@@ -11,7 +11,7 @@
 
 
 Polynomial read_poly(void) {
-    Polynomial front, end, temp;
+    Polynomial front, end;
     int pow, coef, num;
     end = malloc(sizeof(struct PolyNode));
     front = end;
@@ -21,9 +21,9 @@ Polynomial read_poly(void) {
         scanf("%d%d", &coef, &pow);
         attach_poly(coef, pow, &end);
     }
-    temp = front;
-    front = front->Next;
-    free(temp);
+//    temp = front;
+//    front = front->Next;
+//    free(temp);
     return front;
 }
 

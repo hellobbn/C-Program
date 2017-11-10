@@ -11,6 +11,18 @@
 
 int compare_poly(Polynomial p1, Polynomial p2);
 Polynomial add_poly(Polynomial inP1, Polynomial inP2) {
+    inP1 = inP1->Next;
+    inP2 = inP2->Next;
+    if (inP1 == NULL && inP2 == NULL) {
+        return NULL;
+    }
+    if (inP1 == NULL) {
+        return inP2;
+    }
+    if (inP2 == NULL) {
+        return inP1;
+    }
+
     Polynomial front, end, temp;
     end = malloc(sizeof(struct PolyNode));
     front = end;

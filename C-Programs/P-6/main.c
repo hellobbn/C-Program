@@ -14,9 +14,9 @@ int main() {
     p2 = read_poly();
     p_add_fro = add_poly(p1, p2);
     p_mul_fro = poly_multiplication(p1, p2);
-    printPoly(p_add_fro);
-    printf("\n");
     printPoly(p_mul_fro);
+    printf("\n");
+    printPoly(p_add_fro);
     printf("\n");
     return 0;
 }
