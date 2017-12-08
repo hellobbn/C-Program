@@ -13,7 +13,7 @@
 
 int main() {
     char c;
-    int lines = 0;
+    int lines = 1;
     char left_ops[] = {
         '[', '(', '{',
     };
@@ -31,6 +31,7 @@ int main() {
         } else if (InIt(c, right_ops, sizeof(right_ops)/sizeof(right_ops[0]))) {
             if (Matchup(c) != TopAndPop(P)) {
                 printf("Error Not match!\n");
+                printf("In line %d. ", lines);
                 exit(1);
             }
         }

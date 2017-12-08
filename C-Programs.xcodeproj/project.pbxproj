@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDECC8D41FAFDF9100FD77DF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8D31FAFDF9100FD77DF /* main.c */; };
-		FDECC8D61FAFE07100FD77DF /* read_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8D51FAFE07100FD77DF /* read_poly.c */; };
-		FDECC8D91FAFE3AF00FD77DF /* add_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8D81FAFE3AF00FD77DF /* add_poly.c */; };
-		FDECC8DB1FAFE5D200FD77DF /* print_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8DA1FAFE5D200FD77DF /* print_poly.c */; };
-		FDECC8E01FAFEC7100FD77DF /* poly_multiplication.c in Sources */ = {isa = PBXBuildFile; fileRef = FDECC8DF1FAFEC7100FD77DF /* poly_multiplication.c */; };
+		FD51701D1FD92CD300DEAC17 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FD51701C1FD92CD300DEAC17 /* main.c */; };
+		FD5170201FD92D1000DEAC17 /* stack_operation.c in Sources */ = {isa = PBXBuildFile; fileRef = FD51701F1FD92D1000DEAC17 /* stack_operation.c */; };
+		FD5170221FD933A800DEAC17 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = FD5170211FD933A700DEAC17 /* misc.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +25,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD51701C1FD92CD300DEAC17 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FD51701E1FD92CF200DEAC17 /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		FD51701F1FD92D1000DEAC17 /* stack_operation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stack_operation.c; sourceTree = "<group>"; };
+		FD5170211FD933A700DEAC17 /* misc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		FD5170231FD9344A00DEAC17 /* misc_shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = misc_shared.h; sourceTree = "<group>"; };
 		FD58313C1F98AFDC004635EE /* C-Programs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C-Programs"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD58313F1F98AFDC004635EE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FD5831461F98D58D004635EE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -62,6 +65,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD51701B1FD92CAF00DEAC17 /* P-7 */ = {
+			isa = PBXGroup;
+			children = (
+				FD51701C1FD92CD300DEAC17 /* main.c */,
+				FD51701F1FD92D1000DEAC17 /* stack_operation.c */,
+				FD5170211FD933A700DEAC17 /* misc.c */,
+				FD51701E1FD92CF200DEAC17 /* stack.h */,
+				FD5170231FD9344A00DEAC17 /* misc_shared.h */,
+			);
+			path = "P-7";
+			sourceTree = "<group>";
+		};
 		FD5831331F98AFDC004635EE = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +97,7 @@
 		FD58313E1F98AFDC004635EE /* C-Programs */ = {
 			isa = PBXGroup;
 			children = (
+				FD51701B1FD92CAF00DEAC17 /* P-7 */,
 				FDECC8D21FAFDF0800FD77DF /* P-6 */,
 				FDD36D321FA437CF006C32B4 /* P-5 */,
 				FDC0B3EC1FA20DFB000FD0D9 /* P-4 */,
@@ -211,11 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDECC8D91FAFE3AF00FD77DF /* add_poly.c in Sources */,
-				FDECC8DB1FAFE5D200FD77DF /* print_poly.c in Sources */,
-				FDECC8D41FAFDF9100FD77DF /* main.c in Sources */,
-				FDECC8E01FAFEC7100FD77DF /* poly_multiplication.c in Sources */,
-				FDECC8D61FAFE07100FD77DF /* read_poly.c in Sources */,
+				FD5170221FD933A800DEAC17 /* misc.c in Sources */,
+				FD5170201FD92D1000DEAC17 /* stack_operation.c in Sources */,
+				FD51701D1FD92CD300DEAC17 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +346,7 @@
 				DEVELOPMENT_TEAM = 76FF489E5X;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = 7.2;
+				GCC_VERSION = "";
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,7 +360,7 @@
 				DEVELOPMENT_TEAM = 76FF489E5X;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = 7.2;
+				GCC_VERSION = "";
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
