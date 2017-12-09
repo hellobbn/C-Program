@@ -13,6 +13,7 @@
 #define MAXOPS 100
 #define NUMBER 1
 #define OP 2
+#define P_8 1
 
 #include <stdio.h>
 #include <string.h>
@@ -23,5 +24,5 @@
 int c_getch( char* arr );
 int is_digit( char x );
 int is_op( char x );
-void make_tree(pTreeNode left, pTreeNode right, pTreeNode assester);
+pTreeNode make_tree(pTreeNode left, pTreeNode right, pTreeNode assester);
 #endif /* main_h */

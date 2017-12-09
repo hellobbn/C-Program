@@ -11,6 +11,14 @@
 #include "main.h"
 
 pTreeNode MakeNode(void) {
-    return malloc(sizeof(struct TreeNode));
+    pTreeNode T;
+    T = malloc(sizeof(struct TreeNode));
+    T->things = malloc(sizeof(union thing));
+    return T;
 }
 
+pTreeNode make_tree(pTreeNode left, pTreeNode right, pTreeNode assester) {
+    assester->left = left;
+    assester->Right = right;
+    return assester;
+}

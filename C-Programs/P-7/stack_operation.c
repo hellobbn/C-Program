@@ -6,9 +6,12 @@
 //  Copyright © 2017 clfbbn. All rights reserved.
 //
 
+
+#include "stack.h"
+
 #include <stdio.h>
 #include <stdlib.h>
-#include "stack.h"
+
 
 Stack CreatStack( int MaxElements ) {
     Stack P = malloc(sizeof(struct StackRecord));

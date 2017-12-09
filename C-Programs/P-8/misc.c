@@ -25,7 +25,7 @@ int c_getch( char* arr ) {
 }
 
 int is_digit( char x ) {
-    if (x >= 0 && x <= 9) {
+    if (x >= '0' && x <= '9') {
         return 1;
     }
     return 0;

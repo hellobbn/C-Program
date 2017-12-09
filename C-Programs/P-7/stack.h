@@ -6,7 +6,9 @@
 //  Copyright © 2017 clfbbn. All rights reserved.
 //
 
-#ifndef ElementType
+#ifdef P_8
+#define ElementType pTreeNode
+#else
 #define ElementType char
 #endif
 
