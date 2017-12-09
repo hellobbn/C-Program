@@ -6,7 +6,11 @@
 //  Copyright © 2017 clfbbn. All rights reserved.
 //
 
+#ifndef ElementType
 #define ElementType char
+#endif
+
+
 #define MAxElements 50
 #ifndef stack_h
 #define stack_h
