@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD51701D1FD92CD300DEAC17 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FD51701C1FD92CD300DEAC17 /* main.c */; };
-		FD5170201FD92D1000DEAC17 /* stack_operation.c in Sources */ = {isa = PBXBuildFile; fileRef = FD51701F1FD92D1000DEAC17 /* stack_operation.c */; };
-		FD5170221FD933A800DEAC17 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = FD5170211FD933A700DEAC17 /* misc.c */; };
+		FDE27F941FDBCE83002236B4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FDE27F931FDBCE83002236B4 /* main.c */; };
+		FDE27F971FDBD043002236B4 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = FDE27F961FDBD043002236B4 /* tree.c */; };
+		FDE27F991FDBD09E002236B4 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = FDE27F981FDBD09E002236B4 /* misc.c */; };
+		FDE27F9A1FDBD5E7002236B4 /* stack_operation.c in Sources */ = {isa = PBXBuildFile; fileRef = FD51701F1FD92D1000DEAC17 /* stack_operation.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,11 @@
 		FD58314C1F98DD45004635EE /* getch_ungetch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getch_ungetch.c; sourceTree = "<group>"; };
 		FDC0B3ED1FA20E0D000FD0D9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FDD36D331FA437E2006C32B4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FDE27F921FDBCE83002236B4 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		FDE27F931FDBCE83002236B4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FDE27F951FDBCE94002236B4 /* tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
+		FDE27F961FDBD043002236B4 /* tree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tree.c; sourceTree = "<group>"; };
+		FDE27F981FDBD09E002236B4 /* misc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
 		FDECC8D31FAFDF9100FD77DF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FDECC8D51FAFE07100FD77DF /* read_poly.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = read_poly.c; sourceTree = "<group>"; };
 		FDECC8D71FAFE08B00FD77DF /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 		FD58313E1F98AFDC004635EE /* C-Programs */ = {
 			isa = PBXGroup;
 			children = (
+				FDE27F911FDBCE66002236B4 /* P-8 */,
 				FD51701B1FD92CAF00DEAC17 /* P-7 */,
 				FDECC8D21FAFDF0800FD77DF /* P-6 */,
 				FDD36D321FA437CF006C32B4 /* P-5 */,
@@ -134,6 +141,18 @@
 				FDD36D331FA437E2006C32B4 /* main.c */,
 			);
 			path = "P-5";
+			sourceTree = "<group>";
+		};
+		FDE27F911FDBCE66002236B4 /* P-8 */ = {
+			isa = PBXGroup;
+			children = (
+				FDE27F931FDBCE83002236B4 /* main.c */,
+				FDE27F961FDBD043002236B4 /* tree.c */,
+				FDE27F981FDBD09E002236B4 /* misc.c */,
+				FDE27F921FDBCE83002236B4 /* main.h */,
+				FDE27F951FDBCE94002236B4 /* tree.h */,
+			);
+			path = "P-8";
 			sourceTree = "<group>";
 		};
 		FDECC8D21FAFDF0800FD77DF /* P-6 */ = {
@@ -227,9 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD5170221FD933A800DEAC17 /* misc.c in Sources */,
-				FD5170201FD92D1000DEAC17 /* stack_operation.c in Sources */,
-				FD51701D1FD92CD300DEAC17 /* main.c in Sources */,
+				FDE27F9A1FDBD5E7002236B4 /* stack_operation.c in Sources */,
+				FDE27F991FDBD09E002236B4 /* misc.c in Sources */,
+				FDE27F941FDBCE83002236B4 /* main.c in Sources */,
+				FDE27F971FDBD043002236B4 /* tree.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
