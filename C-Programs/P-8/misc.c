@@ -13,6 +13,9 @@ int c_getch( char* arr ) {
     char c;
     int i = 0;
     while ((c = getchar()) != ' ') {
+        if (c == EOF) {
+            return EOF;
+        }
         *(arr + (i++)) = c;             // save the number or op
     }
     if (is_digit(arr[0])) {

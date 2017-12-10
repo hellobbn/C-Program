@@ -10,6 +10,7 @@
 //
 
 #include "main.h"
+#include "stack.h"
 #define P_8 1
 //  Postfix expression like -> a b + c d e + * *
 int main() {
@@ -35,5 +36,6 @@ int main() {
                 break;
         }
     }
+    
     
 }

@@ -19,7 +19,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include "tree.h"
-#include "stack.h"
 
 int c_getch( char* arr );
 int is_digit( char x );

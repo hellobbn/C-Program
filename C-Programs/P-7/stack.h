@@ -6,10 +6,9 @@
 //  Copyright © 2017 clfbbn. All rights reserved.
 //
 
+#include "../P-8/main.h"
 #ifdef P_8
 #define ElementType pTreeNode
-#else
-#define ElementType char
 #endif
 
 
