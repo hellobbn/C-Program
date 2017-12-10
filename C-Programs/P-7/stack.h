@@ -6,9 +6,11 @@
 //  Copyright © 2017 clfbbn. All rights reserved.
 //
 
-#include "../P-8/main.h"
-#ifdef P_8
-#define ElementType pTreeNode
+#include "../stack_h_shared.h"
+
+#ifndef P_STACK_SPACFIED
+#warning "warning: ElementType not spacified, modify it in stack_h_shared.h\nMaking it to char..."
+#define ElementType char
 #endif
 
 

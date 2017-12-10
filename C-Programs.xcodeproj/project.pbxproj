@@ -45,6 +45,7 @@
 		FDE27F951FDBCE94002236B4 /* tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
 		FDE27F961FDBD043002236B4 /* tree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tree.c; sourceTree = "<group>"; };
 		FDE27F981FDBD09E002236B4 /* misc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		FDE27F9B1FDCD1C7002236B4 /* stack_h_shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stack_h_shared.h; path = "C-Programs/stack_h_shared.h"; sourceTree = SOURCE_ROOT; };
 		FDECC8D31FAFDF9100FD77DF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FDECC8D51FAFE07100FD77DF /* read_poly.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = read_poly.c; sourceTree = "<group>"; };
 		FDECC8D71FAFE08B00FD77DF /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 		FD58313E1F98AFDC004635EE /* C-Programs */ = {
 			isa = PBXGroup;
 			children = (
+				FDE27F9B1FDCD1C7002236B4 /* stack_h_shared.h */,
 				FDE27F911FDBCE66002236B4 /* P-8 */,
 				FD51701B1FD92CAF00DEAC17 /* P-7 */,
 				FDECC8D21FAFDF0800FD77DF /* P-6 */,

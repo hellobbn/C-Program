@@ -9,6 +9,7 @@
 
 #ifndef main_h
 #define main_h
+
 #define ElementType pTreeNode
 #define MAXOPS 100
 #define NUMBER 1
