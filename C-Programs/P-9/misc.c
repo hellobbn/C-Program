@@ -26,19 +26,19 @@ pPerson Search(char* way, pPerson head, char* words) {
     if (strcmp(way, "name") == 0) {
         while (position) {
             if (strcmp(position->name, words)) {
-                break;
+                return position;
             }
             position = position->next;
         }
     } else if(strcmp(way, "number")) {
         while (position) {
             if (strcmp(position->number, words)) {
-                break;
+                return position;
             }
             position = position->next;
         }
     }
-    return position;
+    return NULL;
 }
 
 void PrintPerson(pPerson position) {

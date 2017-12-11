@@ -10,13 +10,20 @@
 #include <stdlib.h>
 
 void MakePerson(pPerson head) {
-    pPerson person = NewPerson();
-    printf("Adding a person to your contact: \n");
-    printf("Enter his name: ");
-    scanf("%s", person->name);
-    printf("Enter his number: ");
-    scanf("%s", person->number);
-    AddPerson(person, head);
+    int n;
+    printf("How many poeple do you want to add? ");
+    scanf("%d", &n);
+    for(int i = 0; i < n; ++ i) {
+        pPerson person = NewPerson();
+        printf("Adding the %d%s person to your contact: \n",
+               i+1 , i+1 == 1?"st":i+1 == 2?"nd":i+1 == 3?"rd":"th");
+        printf("Enter his name: ");
+        scanf("%s", person->name);
+        printf("Enter his number: ");
+        scanf("%s", person->number);
+        printf("\n");
+        AddPerson(person, head);
+    }
 }
 
 void PrintPeople(pPerson head) {

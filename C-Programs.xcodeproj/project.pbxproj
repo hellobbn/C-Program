@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FD1FC5051FDE92BB0098F090 /* operation.c in Sources */ = {isa = PBXBuildFile; fileRef = FD1FC4FE1FDE929B0098F090 /* operation.c */; };
+		FD1FC5061FDE96720098F090 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = FD1FC5011FDE929B0098F090 /* misc.c */; };
+		FD1FC5071FDE96750098F090 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FD1FC5001FDE929B0098F090 /* main.c */; };
 		FDE27F9A1FDBD5E7002236B4 /* stack_operation.c in Sources */ = {isa = PBXBuildFile; fileRef = FD51701F1FD92D1000DEAC17 /* stack_operation.c */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,7 @@
 		FD1FC4FE1FDE929B0098F090 /* operation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = operation.c; sourceTree = "<group>"; };
 		FD1FC5001FDE929B0098F090 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FD1FC5011FDE929B0098F090 /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		FD1FC5081FDE96C10098F090 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FD51701C1FD92CD300DEAC17 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FD51701E1FD92CF200DEAC17 /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 		FD51701F1FD92D1000DEAC17 /* stack_operation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stack_operation.c; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		FD1FC4FC1FDE929B0098F090 /* P-9 */ = {
 			isa = PBXGroup;
 			children = (
+				FD1FC5081FDE96C10098F090 /* README.md */,
 				FD1FC4FD1FDE929B0098F090 /* main.h */,
 				FD1FC4FE1FDE929B0098F090 /* operation.c */,
 				FD1FC5001FDE929B0098F090 /* main.c */,
@@ -262,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1FC5071FDE96750098F090 /* main.c in Sources */,
+				FD1FC5061FDE96720098F090 /* misc.c in Sources */,
 				FDE27F9A1FDBD5E7002236B4 /* stack_operation.c in Sources */,
 				FD1FC5051FDE92BB0098F090 /* operation.c in Sources */,
 			);
