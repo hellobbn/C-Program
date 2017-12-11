@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDE27F941FDBCE83002236B4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FDE27F931FDBCE83002236B4 /* main.c */; };
-		FDE27F971FDBD043002236B4 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = FDE27F961FDBD043002236B4 /* tree.c */; };
-		FDE27F991FDBD09E002236B4 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = FDE27F981FDBD09E002236B4 /* misc.c */; };
+		FD1FC5051FDE92BB0098F090 /* operation.c in Sources */ = {isa = PBXBuildFile; fileRef = FD1FC4FE1FDE929B0098F090 /* operation.c */; };
 		FDE27F9A1FDBD5E7002236B4 /* stack_operation.c in Sources */ = {isa = PBXBuildFile; fileRef = FD51701F1FD92D1000DEAC17 /* stack_operation.c */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD1FC4FD1FDE929B0098F090 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		FD1FC4FE1FDE929B0098F090 /* operation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = operation.c; sourceTree = "<group>"; };
+		FD1FC5001FDE929B0098F090 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FD1FC5011FDE929B0098F090 /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
 		FD51701C1FD92CD300DEAC17 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FD51701E1FD92CF200DEAC17 /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 		FD51701F1FD92D1000DEAC17 /* stack_operation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stack_operation.c; sourceTree = "<group>"; };
@@ -72,6 +74,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD1FC4FC1FDE929B0098F090 /* P-9 */ = {
+			isa = PBXGroup;
+			children = (
+				FD1FC4FD1FDE929B0098F090 /* main.h */,
+				FD1FC4FE1FDE929B0098F090 /* operation.c */,
+				FD1FC5001FDE929B0098F090 /* main.c */,
+				FD1FC5011FDE929B0098F090 /* misc.c */,
+			);
+			path = "P-9";
+			sourceTree = "<group>";
+		};
 		FD51701B1FD92CAF00DEAC17 /* P-7 */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				FDE27F9B1FDCD1C7002236B4 /* stack_h_shared.h */,
+				FD1FC4FC1FDE929B0098F090 /* P-9 */,
 				FDE27F911FDBCE66002236B4 /* P-8 */,
 				FD51701B1FD92CAF00DEAC17 /* P-7 */,
 				FDECC8D21FAFDF0800FD77DF /* P-6 */,
@@ -249,9 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDE27F9A1FDBD5E7002236B4 /* stack_operation.c in Sources */,
-				FDE27F991FDBD09E002236B4 /* misc.c in Sources */,
-				FDE27F941FDBCE83002236B4 /* main.c in Sources */,
-				FDE27F971FDBD043002236B4 /* tree.c in Sources */,
+				FD1FC5051FDE92BB0098F090 /* operation.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

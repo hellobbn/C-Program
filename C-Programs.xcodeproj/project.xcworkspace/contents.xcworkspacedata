@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:C-Programs.xcodeproj">
+      location = "group:../../../ForWork/ForC/ContactManager/ContactManager">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
